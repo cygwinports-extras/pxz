@@ -1,0 +1,23 @@
+GIT_URI="git://github.com/jnovy/pxz.git"
+inherit git
+
+NAME="pxz"
+VERSION=20100604
+RELEASE=2
+CATEGORY="Archive"
+SUMMARY="Parallel LZMA de/compressor"
+DESCRIPTION="pxz is a compression utility that takes advantage of running XZ
+compression simultaneously on different parts of an input file on multiple
+cores and processors. This significantly speeds up compression time."
+REQUIRES="xz"
+HOMEPAGE="http://jnovy.fedorapeople.org/pxz/pxz.html"
+
+PATCH_URI="
+	20100604-error.patch
+"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}

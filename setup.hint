@@ -1,7 +1,0 @@
-category: Archive
-requires: libgomp1 liblzma5 xz
-sdesc: "Parallel LZMA de/compressor"
-ldesc: "pxz is a compression utility that takes advantage of running XZ 
-compression simultaneously on different parts of an input file on 
-multiple cores and processors. This significantly speeds up compression 
-time."
