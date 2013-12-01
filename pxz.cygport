@@ -2,8 +2,8 @@ GIT_URI="git://github.com/jnovy/pxz.git"
 inherit git
 
 NAME="pxz"
-VERSION=20100604
-RELEASE=2
+VERSION=20120930
+RELEASE=1
 CATEGORY="Archive"
 SUMMARY="Parallel LZMA de/compressor"
 DESCRIPTION="pxz is a compression utility that takes advantage of running XZ
@@ -13,7 +13,7 @@ REQUIRES="xz"
 HOMEPAGE="http://jnovy.fedorapeople.org/pxz/pxz.html"
 
 PATCH_URI="
-	20100604-error.patch
+	20100604-stdio_ext.patch
 "
 
 src_compile() {
